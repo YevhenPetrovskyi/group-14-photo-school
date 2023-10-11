@@ -1,31 +1,78 @@
 <div class="head">
   <div class="head-container">
     <nav class="head-nav">
-      <a class="head-logo">LOGO</a>
-      <div class="head-menu-overlay">
-        <button class="head-btn-close">Close</button>
+      <a class="head-logo" href="#" title="Focus.Frame">
+        <svg class="head-logo-icon" width="127" height="20">
+          <use href="../img/icons/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <div class="head-menu-overlay is-close" id="menu-block">
         <ul class="head-menu-list">
           <li class="head-menu-item">
-            <a href="#" class="head-menu-link">About us</a>
+            <a
+              href="#"
+              class="head-menu-link head-menu-link-active"
+              title="About us"
+              >About us</a
+            >
           </li>
           <li class="head-menu-item">
-            <a href="#" class="head-menu-link">Our courses</a>
+            <a href="#" class="head-menu-link" title="Our courses"
+              >Our courses</a
+            >
           </li>
           <li class="head-menu-item">
-            <a href="#" class="head-menu-link">Our mentors</a>
+            <a href="#" class="head-menu-link" title="Our mentors"
+              >Our mentors</a
+            >
           </li>
           <li class="head-menu-item">
-            <a href="#" class="head-menu-link">Reviews</a>
+            <a href="#" class="head-menu-link" title="Reviews">Reviews</a>
           </li>
           <li class="head-menu-item">
-            <a href="#" class="head-menu-link">contacts</a>
+            <a href="#" class="head-menu-link" title="Contacts">Contacts</a>
           </li>
         </ul>
+        <button class="head-btn-menu-close" title="Close menu">
+          <svg class="head-menu-close-icon" width="32" height="32">
+            <use href="../img/icons/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
       <div class="head-btn-group">
-        <a href="#" class="head-signup-link">Sign up </a>
-        <button class="head-btn-open">Open</button>
+        <a href="#" class="head-signup-link" title="Go to the sign up form">
+          <svg class="head-signup-icon" width="16" height="16">
+            <use href="../img/icons/icons.svg#icon-camera"></use>
+          </svg>
+        </a>
+        <button class="head-btn-menu-open" title="Open menu">
+          <svg class="head-menu-open-icon" width="32" height="22">
+            <use href="../img/icons/icons.svg#icon-nav"></use>
+          </svg>
+        </button>
       </div>
     </nav>
   </div>
 </div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', event => {
+    const omenu = document.querySelector('.head-btn-menu-open');
+    console.log(omenu);
+    if (omenu) {
+      omenu.addEventListener('click', openMenu, false);
+    }
+    const cmenu = document.querySelector('.head-btn-menu-close');
+    if (cmenu) {
+      cmenu.addEventListener('click', closeMenu, false);
+    }
+  });
+  function openMenu() {
+    document.getElementById('menu-block').classList.remove('is-close');
+    document.getElementById('menu-block').classList.add('is-open');
+  }
+  function closeMenu() {
+    document.getElementById('menu-block').classList.remove('is-open');
+    document.getElementById('menu-block').classList.add('is-close');
+  }
+</script>

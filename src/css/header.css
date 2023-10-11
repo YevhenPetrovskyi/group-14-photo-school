@@ -1,22 +1,111 @@
-.wrapper {
-}
 .head {
   padding: 20px 0;
 }
 .head-container {
   padding: 0 20px;
+  min-width: 320px;
+  max-width: var(--mobile);
+  margin: 0 auto;
 }
 .head-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 14px;
   padding: 15px 20px;
   border-radius: 12px;
   border: 1px solid var(--white-opas20-color);
 }
-.head-btn-close {
-  display: none;
+.head-logo {
+  fill: var(--primary-white-color);
+}
+.head-logo-icon {
+  width: 127px;
+  height: 20px;
+}
+.is-close {
+  transform: translateX(100%);
+}
+.is-open {
+  transform: translateX(0);
 }
 .head-menu-overlay {
-  display: none;
+  background-color: rgba(18, 18, 18, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.25s ease-in-out;
+}
+.head-btn-menu-open {
+  background: transparent;
+  border: none;
+  outline: none;
+  stroke: var(--primary-white-color);
+  width: 32px;
+  height: 22px;
+}
+.head-menu-open-icon {
+  width: 32px;
+  height: 32px;
+}
+.head-btn-menu-close {
+  /*display: none;*/
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 32px;
+  width: 32px;
+  background: red;
+  border: none;
+  outline: none;
+  fill: var(--primary-black-color);
+}
+
+.head-menu-list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 218px;
+  height: 100vh;
+  background-color: var(--accent-color);
+  padding: 180px 20px 20px;
+  overflow: auto;
+}
+.head-menu-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.head-menu-link {
+  color: var(--primary-black-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: normal;
+}
+.head-menu-link-active {
+  font-weight: 700;
+}
+.head-btn-group {
+  display: flex;
+  gap: 14px;
+}
+.head-signup-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--secondary-black-color);
+  fill: var(--accent-color-opas40);
+  border-radius: 50%;
+}
+.head-signup-link:hover,
+.head-signup-link:focus,
+.head-signup-link:active {
+  fill: var(--accent-color);
+}
+.head-signup-icon {
+  width: 16px;
+  height: 16px;
 }
