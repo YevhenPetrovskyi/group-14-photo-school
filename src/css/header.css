@@ -1,0 +1,21 @@
+.wrapper {
+}
+.head {
+  padding: 20px 0;
+}
+.head-container {
+  padding: 0 20px;
+}
+.head-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--);
+}
+.head-btn-close {
+  display: none;
+}
+.head-menu-overlay {
+  display: none;
+}
