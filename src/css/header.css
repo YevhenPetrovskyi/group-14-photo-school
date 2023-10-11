@@ -3,7 +3,7 @@ body {
   scroll-behavior: smooth;
 }
 .wrapper {
-  background-image: url(/img/header/grid.png);
+  background-image: url(/img/header/graphic_bg_mobile.png);
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -59,9 +59,10 @@ body {
 }
 @media (min-resolution: 192dpi) {
   .wrapper {
-    background-image: url(/img/header/grid@2x.png);
+    background-image: url(/img/header/graphic_bg_mobile@2x.png);
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: 375px 947px;
   }
   .head-menu-list {
     background: url(/img/header/mob-menu-bg@2x.jpg) var(--accent-color);
@@ -143,7 +144,7 @@ body {
 /* Styles for tablet */
 @media screen and (min-width: 768px) {
   .wrapper {
-    background-image: url(/img/header/grid-768.png);
+    background-image: url(/img/header/graphic_bg_tablet.png);
     background-repeat: no-repeat;
     background-position: top center;
   }
@@ -173,9 +174,10 @@ body {
   }
   @media (min-resolution: 192dpi) {
     .wrapper {
-      background-image: url(/img/header/grid-768@2x.png);
+      background-image: url(/img/header/graphic_bg_tablet@2x.png);
       background-repeat: no-repeat;
       background-position: top center;
+      background-size: 768px 1120px;
     }
     .head-menu-list {
       background: url(/img/header/mob-menu-bg-768@2x.jpg) var(--accent-color);
@@ -218,11 +220,14 @@ body {
 /* styles for desktop to 1280px */
 @media screen and (min-width: 1280px) {
   .wrapper {
-    background-image: url(/img/header/grid-1280.png);
+    background-image: url(/img/header/graphic_bg_desktop.png);
   }
   @media (min-resolution: 192dpi) {
     .wrapper {
-      background-image: url(/img/header/grid-1280@2x.png);
+      background-image: url(/img/header/graphic_bg_desktop@2x.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 1280px 909px;
     }
   }
   .head {
@@ -301,13 +306,14 @@ body {
 /* styles for desktop to 1280px */
 @media screen and (min-width: 1440px) {
   .wrapper {
-    background-image: url(/img/header/grid-1440.png);
+    background-image: url(/img/header/graphic_bg_1440.png);
   }
   @media (min-resolution: 192dpi) {
     .wrapper {
-      background-image: url(/img/header/grid-1440@2x.png);
+      background-image: url(/img/header/graphic_bg_1440@2x.png);
       background-repeat: no-repeat;
       background-position: top center;
+      background-size: 1440px 910px;
     }
   }
 
