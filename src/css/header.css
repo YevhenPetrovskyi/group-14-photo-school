@@ -1,3 +1,11 @@
+/* wrapper for header and hero section */
+.wrapper {
+  background-image: url(../img/header/grid.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/* Header and mobile menu styles */
 .head {
   padding: 20px 0;
 }
@@ -15,6 +23,7 @@
   padding: 15px 20px;
   border-radius: 12px;
   border: 1px solid var(--white-opas20-color);
+  background-color: var(--primary-black-color);
 }
 .head-logo {
   fill: var(--primary-white-color);
@@ -126,6 +135,12 @@
 @media screen and (min-width: 1280px) {
   .head-container {
     max-width: 1110px;
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 1440рх) {
+  .container {
+    max-width: 1270px;
     padding: 0 15px;
   }
 }
