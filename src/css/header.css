@@ -9,12 +9,6 @@
 .head {
   padding: 20px 0;
 }
-.head-container {
-  padding: 0 20px;
-  min-width: 320px;
-  max-width: var(--mobile);
-  margin: 0 auto;
-}
 .head-nav {
   display: flex;
   justify-content: space-between;
@@ -140,8 +134,6 @@
     padding: 20px 0 40px;
   }
   .head-container {
-    padding: 0 32px;
-    max-width: var(--tablet);
     display: flex;
     gap: 14px;
   }
@@ -192,7 +184,7 @@
   }
 }
 
-/* styles for desctop to 1280px */
+/* styles for desktop to 1280px */
 @media screen and (min-width: 1280px) {
   .wrapper {
     background-image: url(../img/header/grid-1280.png);
@@ -202,8 +194,6 @@
     padding: 20px 0 80px;
   }
   .head-container {
-    padding: 0 100px;
-    max-width: var(--desktop);
     gap: 20px;
   }
   .head-nav {
@@ -214,6 +204,8 @@
   .head-menu-overlay {
     background-color: none;
     position: relative;
+    inset: unset;
+    height: unset;
   }
   .head-menu-list {
     position: relative;
@@ -223,8 +215,8 @@
     margin: 0;
     display: flex;
     gap: 28px;
-    width: auto;
-    height: auto;
+    width: unset;
+    height: unset;
   }
   .head-menu-item:not(:last-child) {
     margin-bottom: 20px;
@@ -257,9 +249,7 @@
     padding: 16px 84px;
   }
 }
-@media screen and (min-width: 1440рх) {
-  .container {
-    max-width: 1270px;
-    padding: 0 15px;
-  }
+
+/* styles for desktop to 1280px */
+@media screen and (min-width: 1440px) {
 }
