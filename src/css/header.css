@@ -1,14 +1,13 @@
 /* wrapper for header and hero section */
-body {
-  scroll-behavior: smooth;
-}
 .wrapper {
   background-image: url(/img/header/graphic_bg_mobile.png);
   background-repeat: no-repeat;
   background-position: top center;
 }
 
+/* **************************** */
 /* Header and mobile menu styles */
+/* **************************** */
 .head {
   padding: 20px 0;
 }
@@ -144,7 +143,9 @@ body {
   display: none;
 }
 
+/* **************************** */
 /* Styles for tablet */
+/* **************************** */
 @media screen and (min-width: 768px) {
   .wrapper {
     background-image: url(/img/header/graphic_bg_tablet.png);
@@ -220,7 +221,10 @@ body {
     color: var(--accent-color);
   }
 }
+
+/* **************************** */
 /* styles for desktop to 1280px */
+/* **************************** */
 @media screen and (min-width: 1280px) {
   .wrapper {
     background-image: url(/img/header/graphic_bg_desktop.png);
@@ -303,7 +307,9 @@ body {
   }
 }
 
-/* styles for desktop to 1280px */
+/* **************************** */
+/* styles for desktop to 1440px */
+/* **************************** */
 @media screen and (min-width: 1440px) {
   .wrapper {
     background-image: url(/img/header/graphic_bg_1440.png);
