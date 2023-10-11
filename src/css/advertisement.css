@@ -1,0 +1,68 @@
+/* **************************** */
+/* Section-Advertisement styles */
+/* **************************** */
+
+.marquee-line-container {
+  overflow: hidden;
+  color: var(--accent-color);
+  border-top: 1px solid var(--white-opas20-color);
+  border-bottom: 1px solid var(--white-opas20-color);
+}
+
+.white-text {
+  color: var(--primary-white-color);
+}
+
+.marquee-line-inner {
+  display: flex;
+}
+.marquee-line {
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-weight: 400;
+  flex-shrink: 0;
+  padding: 20px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+/* **************************** */
+/* Rool of animation */
+/* **************************** */
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* **************************** */
+/* Styles for tablet */
+/* **************************** */
+
+@media screen and (min-width: 768px) {
+  .marquee-line {
+    font-size: 40px;
+    line-height: 1.2;
+    padding: 24px;
+  }
+}
+
+/* **************************** */
+/* Styles for desktop to 1440px */
+/* **************************** */
+
+@media screen and (min-width: 1280px) {
+  .marquee-line {
+    font-size: 59px;
+  }
+}
