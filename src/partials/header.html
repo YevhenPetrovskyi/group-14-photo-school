@@ -3,7 +3,7 @@
     <nav class="head-nav">
       <a class="head-logo" href="#" title="Focus.Frame">
         <svg class="head-logo-icon" width="127" height="20">
-          <use href="../img/icons/icons.svg#icon-logo"></use>
+          <use href="./img/icons/icons.svg#icon-logo"></use>
         </svg>
       </a>
       <div class="head-menu-overlay is-close" id="menu-block">
@@ -42,12 +42,12 @@
       <div class="head-btn-group">
         <a href="#" class="head-signup-link" title="Go to the sign up form">
           <svg class="head-signup-icon" width="16" height="16">
-            <use href="../img/icons/icons.svg#icon-camera"></use>
+            <use href="./img/icons/icons.svg#icon-camera"></use>
           </svg>
         </a>
         <button class="head-btn-menu-open" title="Open menu">
           <svg class="head-menu-open-icon" width="32" height="22">
-            <use href="../img/icons/icons.svg#icon-nav"></use>
+            <use href="./img/icons/icons.svg#icon-nav"></use>
           </svg>
         </button>
       </div>
@@ -58,7 +58,6 @@
 <script>
   window.addEventListener('DOMContentLoaded', event => {
     const omenu = document.querySelector('.head-btn-menu-open');
-    console.log(omenu);
     if (omenu) {
       omenu.addEventListener('click', openMenu, false);
     }

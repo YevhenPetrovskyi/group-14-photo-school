@@ -38,44 +38,50 @@
   right: 0;
   transition: all 0.25s ease-in-out;
 }
-.head-btn-menu-open {
-  background: transparent;
-  border: none;
-  outline: none;
-  stroke: var(--primary-white-color);
-  width: 32px;
-  height: 22px;
-}
-.head-menu-open-icon {
-  width: 32px;
-  height: 32px;
-}
-.head-btn-menu-close {
-  /*display: none;*/
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 32px;
-  width: 32px;
-  background: red;
-  border: none;
-  outline: none;
-  fill: var(--primary-black-color);
-}
-
 .head-menu-list {
   position: absolute;
   right: 0;
   top: 0;
   width: 218px;
   height: 100vh;
-  background-color: var(--accent-color);
   padding: 180px 20px 20px;
   overflow: auto;
+  background: url(../img/header/mob-menu-bg.png) var(--accent-color);
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 .head-menu-item:not(:last-child) {
   margin-bottom: 20px;
 }
+.head-btn-menu-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  stroke: var(--primary-white-color);
+  padding: 0;
+  width: 32px;
+  height: 22px;
+}
+.head-btn-menu-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 32px;
+  width: 32px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  stroke: var(--primary-black-color);
+  fill: var(--primary-black-color);
+}
+
 .head-menu-link {
   color: var(--primary-black-color);
   font-size: 14px;
@@ -88,6 +94,7 @@
 }
 .head-btn-group {
   display: flex;
+  align-items: center;
   gap: 14px;
 }
 .head-signup-link {
@@ -108,4 +115,17 @@
 .head-signup-icon {
   width: 16px;
   height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .head-container {
+    max-width: var(--tablet);
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .head-container {
+    max-width: 1110px;
+    padding: 0 15px;
+  }
 }
