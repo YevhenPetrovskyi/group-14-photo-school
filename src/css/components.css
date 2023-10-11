@@ -1,95 +1,80 @@
 /*спільні параметри, боді і контейнер і тд */
 body {
-    font-family: 'DM Sans', sans;
-    background-color: var(--primary-black-color);
-    color: var(--primary-white-color);
+  font-family: 'DM Sans', sans;
+  background-color: var(--primary-black-color);
+  color: var(--primary-white-color);
 }
 
-.header {
-    padding-bottom: 20px;
-}
-
-@media screen and (min-width: var(--tablet)) {
-    .header {
-        padding-bottom: 40px;
-    }
-}
-
-@media screen and (min-width: var(--desktop)) {
-    .header {
-        padding-bottom: 80px;
-    }
-}
 .container {
-    min-width: 320px;
-    max-width: var(--mobile);
-    padding: 0 20px;
-    margin: 0 auto;
+  min-width: 320px;
+  max-width: var(--mobile);
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: var(--tablet)) {
-    .container {
-        max-width: var(--tablet);
-        padding: 0 32px;
-    }
+  .container {
+    max-width: var(--tablet);
+    padding: 0 32px;
+  }
 }
 
 @media screen and (min-width: var(--desktop)) {
-    .container {
-        max-width: 1110px;
-        padding: 0 15px;
-    }
+  .container {
+    max-width: 1110px;
+    padding: 0 15px;
+  }
 }
 
 @media screen and (min-width: var(--secondary-desktop)) {
-    .container {
-        max-width: 1270px;
-        padding: 0 15px;
-    }
+  .container {
+    max-width: 1270px;
+    padding: 0 15px;
+  }
 }
 
 .section {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 @media screen and (min-width: var(--tablet)) {
-    .section {
-        padding-bottom: 100px;
-    }
+  .section {
+    padding-bottom: 100px;
+  }
 }
 
 @media screen and (min-width: var(--desktop)) {
-    .section {
-        padding-bottom: 150px;
-    }
+  .section {
+    padding-bottom: 150px;
+  }
 }
 
 .section-title {
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: -0.04em;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
 }
 
 @media screen and (min-width: var(--tablet)) {
-    .section-title {
-        font-size: 48px;
-        line-height: 1.12;
-    }
+  .section-title {
+    font-size: 48px;
+    line-height: 1.12;
+  }
 }
 
 .section-text {
-    font-size: 14px;
-    line-height: 1.28;
-    letter-spacing: -0.02em;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
 }
 
 @media screen and (min-width: var(--tablet)) {
-.section-text {
+  .section-text {
     font-size: 16px;
     line-height: 1.25;
-}
+  }
 }
 .accent-text {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
