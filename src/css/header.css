@@ -9,9 +9,10 @@
 .head-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 20px;
   border-radius: 12px;
-  border: 1px solid var(--);
+  border: 1px solid var(--white-opas20-color);
 }
 .head-btn-close {
   display: none;

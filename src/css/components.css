@@ -1,1 +1,5 @@
 /*! Якісь спільні параметри боді і контейнер і тд */
+body {
+  background-color: var(--primary-black-color);
+  color: var(--primary-white-color);
+}
