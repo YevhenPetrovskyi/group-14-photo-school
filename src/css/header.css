@@ -1,6 +1,9 @@
 /* wrapper for header and hero section */
+body {
+  scroll-behavior: smooth;
+}
 .wrapper {
-  background-image: url(../img/header/grid.png);
+  background-image: url(/img/header/grid.png);
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -49,10 +52,23 @@
   height: 100vh;
   padding: 180px 20px 20px;
   overflow: auto;
-  background: url(/img/header/mob-menu-bg.png) var(--accent-color);
+  background: url(/img/header/mob-menu-bg.jpg) var(--accent-color);
   background-repeat: no-repeat;
   background-position: bottom center;
   min-height: 812px;
+}
+@media (min-resolution: 192dpi) {
+  .wrapper {
+    background-image: url(/img/header/grid@2x.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .head-menu-list {
+    background: url(/img/header/mob-menu-bg@2x.jpg) var(--accent-color);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 218px 329px;
+  }
 }
 .head-menu-item:not(:last-child) {
   margin-bottom: 20px;
@@ -127,7 +143,9 @@
 /* Styles for tablet */
 @media screen and (min-width: 768px) {
   .wrapper {
-    background-image: url(../img/header/grid-768.png);
+    background-image: url(/img/header/grid-768.png);
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 
   .head {
@@ -148,11 +166,25 @@
   .head-menu-list {
     width: 480px;
     padding: 232px 64px 64px;
-    background: url(/img/header/mob-menu-bg-768.png) var(--accent-color);
+    background: url(/img/header/mob-menu-bg-768.jpg) var(--accent-color);
     background-repeat: no-repeat;
     background-position: bottom center;
     min-height: 1024px;
   }
+  @media (min-resolution: 192dpi) {
+    .wrapper {
+      background-image: url(/img/header/grid-768@2x.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    .head-menu-list {
+      background: url(/img/header/mob-menu-bg-768@2x.jpg) var(--accent-color);
+      background-size: 480px 476px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+    }
+  }
+
   .head-menu-item:not(:last-child) {
     margin-bottom: 28px;
   }
@@ -183,13 +215,16 @@
     color: var(--accent-color);
   }
 }
-
 /* styles for desktop to 1280px */
 @media screen and (min-width: 1280px) {
   .wrapper {
-    background-image: url(../img/header/grid-1280.png);
+    background-image: url(/img/header/grid-1280.png);
   }
-
+  @media (min-resolution: 192dpi) {
+    .wrapper {
+      background-image: url(/img/header/grid-1280@2x.png);
+    }
+  }
   .head {
     padding: 20px 0 80px;
   }
@@ -200,9 +235,11 @@
     flex-grow: 1;
     padding: 22px 50px;
   }
-
+  .is-close {
+    transform: translateX(0);
+  }
   .head-menu-overlay {
-    background-color: none;
+    background-color: transparent;
     position: relative;
     inset: unset;
     height: unset;
@@ -211,15 +248,19 @@
     position: relative;
     overflow: hidden;
     background: none;
+    inset: unset;
+    min-height: unset;
     padding: 0;
     margin: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 28px;
-    width: unset;
     height: unset;
+    width: unset;
   }
   .head-menu-item:not(:last-child) {
-    margin-bottom: 20px;
+    margin: 0;
   }
   .head-btn-menu-open {
     display: none;
@@ -234,9 +275,16 @@
     text-transform: uppercase;
     font-weight: 400;
     line-height: normal;
+    transition: all 250ms ease-in-out;
   }
   .head-menu-link-active {
-    font-weight: 700;
+    font-weight: 400;
+    color: var(--accent-color);
+  }
+  .head-menu-link:hover,
+  .head-menu-link:active,
+  .head-menu-link:focus {
+    color: var(--accent-color);
   }
   .head-btn-group {
     display: none;
@@ -252,4 +300,18 @@
 
 /* styles for desktop to 1280px */
 @media screen and (min-width: 1440px) {
+  .wrapper {
+    background-image: url(/img/header/grid-1440.png);
+  }
+  @media (min-resolution: 192dpi) {
+    .wrapper {
+      background-image: url(/img/header/grid-1440@2x.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+  }
+
+  .head-menu-list {
+    gap: 40px;
+  }
 }
