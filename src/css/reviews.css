@@ -34,9 +34,9 @@
 }
 .reviews-stars {
   margin-left: auto;
-  fill: #bea69e;
+  fill: var(--accent-color);
   stroke-width: 1.5px;
-  stroke: #bea69e;
+  stroke: var(--accent-color);
 }
 
 .reviews-client-name {
