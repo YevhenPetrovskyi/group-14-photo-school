@@ -1,0 +1,53 @@
+.foot-logo {
+    fill: var(--primary-white-color);
+}
+
+.foot-icon {
+    margin-bottom: 16px;
+}
+
+.contact {
+    margin-bottom: 40px;
+}
+
+.contact-list,
+.social-network-list,
+.foot-nav-list {
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+.contact-link,
+.social-network-link,
+.foot-nav-link {
+    text-transform: uppercase;
+}
+
+.foot-nav {
+    margin-bottom: 75px;
+}
+
+.foot-form-email {
+    margin-bottom: 40px;
+}
+
+.privacy {
+    display: flex;
+    gap: 72px;
+}
+
+.privacy-link,
+.frame-text {
+    font-size: 12px;
+    line-height: 1.33;
+}
+
+.privacy-link {
+    width: 147px;
+    
+}
+
+.frame-text {
+    width: 116px;
+}
+ 
