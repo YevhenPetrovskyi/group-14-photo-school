@@ -2,18 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 410px;
     margin-bottom: 50px;
-}
-
-.course-span {
-    color: var(--accent-color);
 }
 
 .course-text {
     max-width: 405px;
-line-height: 1.25;
-letter-spacing: -0.02em;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
 }
 
 .card-list {
@@ -26,18 +21,17 @@ letter-spacing: -0.02em;
 }
 
 .card-item {
-    width: calc((100% - 40px) / 3);
 height: 452px;
-border-radius: 12px;
-border: 1px solid var( --white-opas20-color);
-background: var(--gradient-color);
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid var( --white-opas20-color);
+    background: var(--gradient-color);
 }
 
 .card-container {
     display: flex;
-    padding: 32px;
     justify-content: space-between;
-
+    margin-bottom: 20px;
 }
 
 .card-number {
@@ -52,9 +46,9 @@ letter-spacing: -0.02em;
     justify-content: center;
     align-items: center;
     width: 32px;
-height: 32px;
-background-color:  var(--secondary-black-color);
-border-radius: 50%;
+    height: 32px;
+    background-color:  var(--secondary-black-color);
+    border-radius: 50%;
 }
 
 .signup-link:hover {
@@ -71,11 +65,9 @@ border-radius: 50%;
 
 .card-title {
     max-width: 265px;
-    color: var(--primary-white-color);
 font-size: 28px;
 font-weight: 500;
 line-height: 1.14;
-margin-left: 32px;
 margin-bottom: 145px;
 }
 
@@ -83,5 +75,4 @@ margin-bottom: 145px;
     color: var(--white-opas50-color);
 line-height: 1.25;
 letter-spacing: -0.02em;
-padding: 32px;
 }
