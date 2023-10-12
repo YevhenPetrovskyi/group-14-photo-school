@@ -45,32 +45,82 @@ display: flex;
 }
 .camera{
     margin-right: 50px;
+    height: 240px;
 }
 @media screen and (min-width: 320px) and (max-width: 767.98px){
+.div-paragraf{
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.div-zagolovok{
+    margin-bottom: 40px;
+}
 .about-us{
+   margin-right: 20px;
+   margin-left: 20px;
+}
+.div-about-us{
+    margin: 0;
+
+}
+.zagolovok , .zag-paragraf{
+    font-size: 28px;
+    line-height: 32px; /* 114.286% */
+    letter-spacing: -1.12px;
+}
+.zagolovok{
+    padding-right: 10px;
+}
+.camera{
+    width:335px;
+    height: 209px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+.parag-1 , .parag-2{
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+    font-size: 14px;
+}
+.parag-1{
+    margin: 0;
+    margin-bottom: 20px;
+    width: 335px;
+}
+.parag-2{
+    width: 335px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+        .about-us{
     margin-left: 32px;
     margin-right: 32px;
 }
 .div-about-us{
-    margin: 0 auto;
+ margin: 0;
 }
 .div-paragraf{
     flex-wrap: wrap;
+    justify-content: center;
 }
 .camera{
-    width: 340px;
-    height: 704px;
+    width: 704px;
+    height: 340px;
+    margin: 0;
+    margin-bottom: 50px;
 }
+    
 }
-@media screen and (min-width: 768px) and (max-width: 1280px){
-        .camera{
+@media screen and (min-width: 1280px) and (max-width: 1439px){
+    .camera{
         margin-right: 40px;
+      width: 488px;
+      height: 260px;
+        
     }
     .parag-1{
         margin-right: 20px;
         text-shadow: none;
     }
-}
-@media screen and (max-width: 320px){
-    
 }
