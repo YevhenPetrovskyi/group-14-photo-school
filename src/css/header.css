@@ -44,6 +44,8 @@
   right: 0;
   z-index: 1;
   transition: all 0.25s ease-in-out;
+
+  z-index: 10;
 }
 .head-menu-list {
   position: absolute;
