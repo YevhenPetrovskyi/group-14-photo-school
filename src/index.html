@@ -50,7 +50,7 @@
     </a>
     <ul class="contact">
       <li class="contact-list">
-        <a href="tel:+380665438912">
+        <a class="contact-link" href="tel:+380665438912">
           UK: +38 066 543 8912
         </a>
       </li>
@@ -61,21 +61,69 @@
     <div class="foot-social-network">
       <ul class="social-network">
         <li class="social-network-list">
-          <a class="social-network-name" href="https://www.instagram.com/goitclub/" target="_blank">
+          <a class="social-network-link" href="https://www.instagram.com/goitclub/" target="_blank">
             Instagram
           </a>
         </li>
         <li class="social-network-list">
-          <a class="social-network-name" href="https://www.facebook.com/goITclub/" target="_blank">
+          <a class="social-network-link" href="https://www.facebook.com/goITclub/" target="_blank">
             Facebook
           </a>
         </li>
         <li class="social-network-list">
-          <a class="social-network-name" href="https://www.youtube.com/c/GoIT" target="_blank">
+          <a class="social-network-link" href="https://www.youtube.com/c/GoIT" target="_blank">
             Youtube
           </a>
         </li>
       </ul>
+    </div>
+    <!-- Додати посилання якір -->
+    <div class="nav">
+      <ul class="foot-nav">
+        <li class="foot-nav-list">
+          <a class="foot-nav-link" href="#">
+            About us
+          </a>
+        </li>
+        <li class="foot-nav-list">
+          <a class="foot-nav-link" href="#">
+            Our courses
+          </a>
+        </li>
+        <li class="foot-nav-list">
+          <a class="foot-nav-link" href="#">
+            Our mentors
+          </a>
+        </li>
+        <li class="foot-nav-list">
+          <a class="foot-nav-link" href="#">
+            Reviews
+          </a>
+        </li>
+        <li class="foot-nav-list">
+          <a class="foot-nav-link" href="#">
+            Contacts
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="foot-form">
+      <form class="foot-form-email" name="form-email" autocomplete="off">
+        <label class="foot-form-label" for="uemail">
+
+        </label>
+        <input 
+        class="foot-form-input" 
+        type="email" 
+        name="user-email" 
+        id="uemail" 
+        placeholder="Enter your email" 
+        pattern="[^а-яёА-ЯЁ]\S{10,40}"
+        required />
+        <button class="foot-btn" type="submit">
+          Go
+        </button>
+      </form>
     </div>
   </div>
 </footer>
