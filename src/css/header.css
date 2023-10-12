@@ -98,10 +98,8 @@
   width: 32px;
   background: transparent;
   border: none;
-  outline: none;
   padding: 0;
   stroke: var(--primary-black-color);
-  fill: var(--primary-black-color);
   transition: all 250ms ease-in-out;
 }
 .head-btn-menu-close:hover,
