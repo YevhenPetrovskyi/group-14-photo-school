@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 /* wrapper for header and hero section */
 .wrapper {
   background-image: url(/img/header/graphic_bg_mobile.png);

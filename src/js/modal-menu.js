@@ -7,6 +7,8 @@
     if (cmenu) {
       cmenu.addEventListener('click', closeMenu, false);
     }
+    let elements = document.querySelectorAll(".head-menu-link");
+    elements.forEach(el => el.addEventListener('click', event => {closeMenu();}));
   });
   function openMenu() {
     document.getElementById('menu-block').classList.remove('is-close');
