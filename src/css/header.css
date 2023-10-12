@@ -43,6 +43,8 @@
   left: 0;
   right: 0;
   transition: all 0.25s ease-in-out;
+
+  z-index: 10;
 }
 .head-menu-list {
   position: absolute;
