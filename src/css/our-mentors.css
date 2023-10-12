@@ -3,17 +3,7 @@
 /* Mentors Title */
 
 .our-mentors-title {
-  color: var(--primary-white-color);
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -0.04em;
   margin-bottom: 40px;
-}
-
-.color-brown {
-  color: var(--accent-color);
 }
 
 /* Mentors sheet */
@@ -54,8 +44,6 @@
 .mentor-desc {
   color: var(--white-opas50-color);
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-align: center;
@@ -67,11 +55,6 @@
   /* Mentors Title */
 
   .our-mentors-title {
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.12;
-    letter-spacing: -0.04em;
     margin-bottom: 50px;
   }
 
@@ -88,18 +71,11 @@
   }
 
   .mentors-title {
-    text-align: center;
-    font-size: 28px;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.14;
   }
 
   .mentor-desc {
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.02em;
   }
