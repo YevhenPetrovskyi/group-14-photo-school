@@ -16,7 +16,8 @@
 .reviews-item {
   padding: 20px;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--white-opas20-color);
+  width: calc((100% - 20px) / 2);
 }
 
 .reviews-item-wrap {
@@ -32,11 +33,20 @@
   display: flex;
   flex-direction: column;
 }
-.reviews-stars {
+.reviews-rate {
   margin-left: auto;
+}
+
+.reviews-star:not(:last-child) {
   fill: var(--accent-color);
   stroke-width: 1.5px;
   stroke: var(--accent-color);
+}
+
+.reviews-star:last-child {
+  fill: var(--white-opas20-color);
+  stroke-width: 1px;
+  stroke: #414141;
 }
 
 .reviews-client-name {
@@ -47,8 +57,13 @@
 }
 
 .reviews-client-status {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--white-opas50-color);
   font-size: 14px;
   line-height: 1.28;
+  letter-spacing: -0.02em;
+}
+
+.reviews-text {
+  line-height: 1.25;
   letter-spacing: -0.02em;
 }
