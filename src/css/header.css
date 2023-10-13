@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 /* wrapper for header and hero section */
 .wrapper {
   background-image: url(/img/header/graphic_bg_mobile.png);
@@ -13,9 +16,16 @@
 }
 .head-nav {
   display: flex;
+  gap: 14px;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.head-nav-inner {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 14px;
+  flex-grow: 1;
   padding: 15px 20px;
   border-radius: 12px;
   border: 1px solid var(--white-opas20-color);
@@ -42,6 +52,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 1;
   transition: all 0.25s ease-in-out;
 }
 .head-menu-list {
@@ -97,10 +108,14 @@
   width: 32px;
   background: transparent;
   border: none;
-  outline: none;
   padding: 0;
   stroke: var(--primary-black-color);
-  fill: var(--primary-black-color);
+  transition: all 250ms ease-in-out;
+}
+.head-btn-menu-close:hover,
+.head-btn-menu-close:focus,
+.head-btn-menu-close:active {
+  transform: rotate(180deg);
 }
 
 .head-menu-link {
@@ -160,8 +175,7 @@
     display: flex;
     gap: 14px;
   }
-  .head-nav {
-    flex-grow: 1;
+  .head-nav-inner {
     padding: 16px 20px;
   }
   .head-logo-icon {
@@ -244,7 +258,9 @@
     gap: 20px;
   }
   .head-nav {
-    flex-grow: 1;
+    gap: 20px;
+  }
+  .head-nav-inner {
     padding: 22px 50px;
   }
   .is-close {
