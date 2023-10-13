@@ -52,20 +52,22 @@ letter-spacing: -0.02em;
     align-items: center;
     width: 32px;
     height: 32px;
-    background-color:  var(--secondary-black-color);
+    background-color: var(--secondary-black-color);
     border-radius: 50%;
 }
 
-.signup-link:hover {
+.signup-link:hover,
+.signup-link:focus {
     background-color: var(--accent-color);
+}
+
+.signup-link:hover .icon-arrow,
+.signup-link:focus .icon-arrow {
+    fill: var(--primary-white-color);
 }
 
 .icon-arrow {
     fill: #777777;
-}
-
-.icon-arrow:hover {
-    fill: var(--primary-white-color);
 }
 
 .card-title {
@@ -78,8 +80,8 @@ letter-spacing: -0.02em;
 
 .card-text {
     color: var(--white-opas50-color);
+    max-width: 279px;
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.02em;
 }
@@ -130,7 +132,15 @@ letter-spacing: -0.02em;
         }
 
         .card-item {
-            max-width: 347px;
+            flex-basis: calc((100% - 40px) / 3);
+        }
+
+        .card-text {
+            max-width: 283px;
+        }
+
+        .card-title {
+            max-width: 265px;
         }
     }
 
@@ -150,6 +160,10 @@ letter-spacing: -0.02em;
 
         .card-item {
             margin-bottom: 200px;
+        }
+
+        .card-text {
+            max-width: 336px;
         }
     }
 /* END desktop 1440 */
