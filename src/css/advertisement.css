@@ -58,11 +58,22 @@
 }
 
 /* **************************** */
-/* Styles for desktop to 1440px */
+/* Styles for desktop to 1280px */
 /* **************************** */
 
 @media screen and (min-width: 1280px) {
+  .marquee-line-container {
+    max-width: var(--desktop);
+  }
   .marquee-line {
     font-size: 59px;
+  }
+}
+/* **************************** */
+/* Styles for desktop to 1440px */
+/* **************************** */
+@media screen and (min-width: 1440px) {
+  .marquee-line-container {
+    max-width: var(--secondary-desktop);
   }
 }
