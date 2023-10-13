@@ -1,47 +1,65 @@
-.title{
-    margin-bottom: 40px;
+.title {
+  margin-bottom: 40px;
 }
-.div-paragraf{
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+.div-paragraf {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-.div-paragraf-flex{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+.div-paragraf-flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
-.camera{
+  .camera {
     width: 704px;
-}
-.div-paragraf-flex{
-    flex-wrap: nowrap;
-    gap: 40px;
-}
-.title{
-    margin-bottom: 50px;
-}
-.div-paragraf{
-    gap: 50px;
-}
-.parag-1 , .parag-2{
-    width: 280px;
-}
-}
-@media screen and (min-width: 1280px){
-  .div-paragraf{
+  }
+  .div-paragraf-flex {
     flex-wrap: nowrap;
     gap: 40px;
   }
-  .parag-1{
+  .title {
+    margin-bottom: 50px;
+  }
+  .div-paragraf {
+    gap: 50px;
+  }
+  .parag-1,
+  .parag-2 {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .div-paragraf {
+    flex-wrap: nowrap;
+    gap: 40px;
+  }
+  .parag-1 {
     width: 268px;
   }
-  .parag-2{
+  .parag-2 {
     width: 264px;
   }
-  .div-paragraf-flex{
+  .div-paragraf-flex {
     gap: 20px;
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .div-paragraf {
+    gap: 50px;
+  }
+
+  .parag-1 {
+    width: 314px;
+  }
+
+  .parag-2 {
+    width: 276px;
+  }
+
+  .div-paragraf-flex {
+    gap: 40px;
+  }
+}
