@@ -16,9 +16,16 @@
 }
 .head-nav {
   display: flex;
+  gap: 14px;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.head-nav-inner {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 14px;
+  flex-grow: 1;
   padding: 15px 20px;
   border-radius: 12px;
   border: 1px solid var(--white-opas20-color);
@@ -168,8 +175,7 @@
     display: flex;
     gap: 14px;
   }
-  .head-nav {
-    flex-grow: 1;
+  .head-nav-inner {
     padding: 16px 20px;
   }
   .head-logo-icon {
@@ -252,7 +258,9 @@
     gap: 20px;
   }
   .head-nav {
-    flex-grow: 1;
+    gap: 20px;
+  }
+  .head-nav-inner {
     padding: 22px 50px;
   }
   .is-close {
