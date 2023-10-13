@@ -1,4 +1,9 @@
 /*спільні параметри, боді і контейнер і тд */
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DM Sans'),
+    url('/fonts/DMSans-VariableFont_opsz_wght.ttf') format('truetype');
+}
 body {
   font-family: var(--main-font);
   background-color: var(--primary-black-color);
