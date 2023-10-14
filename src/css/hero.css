@@ -117,8 +117,7 @@
 
     .hero-main-paragraph {
     width: 418px;
-    height: 54px;
-}
+    }
 
     .hero-people {
     display: flex;
@@ -197,6 +196,14 @@
 .background {
     max-width: 1240px;
     gap: 130px;
+}
+
+.hero-main{
+    padding-top: 80px;
+}
+
+.hero-second{
+    /* margin-top: 0; */
 }
 
 }
