@@ -1,4 +1,14 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
 <link rel="stylesheet" href="/src/css/hero.css">
 <link rel="stylesheet" href="/src/css/variables.css">
 <link rel="stylesheet" href="/src/css/reset.css">
@@ -6,8 +16,9 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
     rel="stylesheet" />
 
-<section class="hero container">
-    <div class="hero-content">
+<section class="section">
+    <div class="background container">
+        <div class="hero-wrapper">
     <div class="hero-main">
         <h1 class="hero-main-title">Discover the magic of <span class="hero-main-title-span">photography</span> in our school</h1>
         <p class="hero-main-paragraph">Our photography school offers an unforgettable journey, where you can learn the basics of composition, master technical
@@ -19,21 +30,23 @@
             <img class="hero-people-image"
             width="109"
             height="44"
-            src="/src/img/hero/people.png"
-            srcset="/src/img/hero/people.png 1x, /src/img/hero/people@2x.png 2x"
+            src="./img/hero/people.png"
+            srcset="./img/hero/people.png 1x, ./img/hero/people@2x.png 2x"
             alt="people">
             </picture>
             <div class="hero-students">
                 <p class="hero-students-paragraph">Our happy students</p>
                 <svg class="hero-students-arrow" width="18" height="8">
-                    <use href="/src/img/icons/icons.svg#icon-arrow-hero"></use>
+                    <use href="./img/icons/icons.svg#icon-arrow-hero"></use>
                 </svg>
             </div>
         </div>
         <div class="hero-reviews">
+            <div class="star">
             <svg class="hero-star" width="20" height="20">
-                <use href="/src/img/icons/icons.svg#icon-star"></use>
+                <use href="./img/icons/icons.svg#icon-star"></use>
             </svg>
+            </div>
             <div class="hero-count">
                 <p class="hero-count-paragraph">Reviews</p>
                 <span class="hero-count-span">+1500</span>
@@ -43,18 +56,19 @@
     </div>
     <picture>
         <source media="(max-width:767px )" srcset="
-                /src/img/hero/guy_mobile.png 1x, 
-                /src/img/hero/guy_mobile@2x.png 2x" />
+                ./img/hero/guy_mobile.png, 
+                ./img/hero/guy_mobile@2x.png 2x" />
         <source media="(min-width:768px )" srcset="
-                /src/img/hero/guy_tablet.png 1x, 
-                /src/img/hero/guy_tablet@2x.png 2x" />
+                ./img/hero/guy_tablet.png, 
+                ./img/hero/guy_tablet@2x.png 2x" />
         <source media="(min-width:1280px )" srcset="
-                /src/img/hero/guy_desktop.png 1x, 
-                /src/img/hero/guy_desktop@2x.png 2x" />
+                ./img/hero/guy_desktop.png, 
+                ./img/hero/guy_desktop@2x.png 2x" />
         <img
+        width="259"
         class="hero-image"
-        src="/src/img/hero/guy_mobile.png"
-        sizes="(min-width: 320px) 500px"
-        alt="guy">
+        src="./img/hero/guy_mobile.png"
+        alt="guy"/>
     </picture>
+        </div>
 </section>

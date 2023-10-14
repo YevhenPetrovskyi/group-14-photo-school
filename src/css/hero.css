@@ -1,15 +1,15 @@
-section {
-    font-family: 'DM Sans', sans;
+.hero {
+    max-width: 335px;
+    margin: 0 auto;
 }
 
-.hero {
+.background {
     background-color: var(--secondary-black-color);
     border-radius: 30px;
-    color: var(--primary-white-color);
 }
 
-.hero-content {
-
+.container {
+    max-width: var(--mobile);
 }
 
 .hero-main {
@@ -43,14 +43,6 @@ section {
     gap: 41px;
 }
 
-.hero-people {
-
-}
-
-.hero-people-image {
-
-}
-
 .hero-students {
     display: flex;
     gap: 4px;
@@ -75,12 +67,17 @@ section {
     gap:12px;
 }
 
-.hero-star {
-    fill: transparent;
-    stroke: black;
+.star {
     background-color: var(--accent-color);
     border-radius: 50%;
     padding: 12px;
+    width: 44px;
+    height: 44px;
+}
+
+.hero-star {
+    fill: transparent;
+    stroke: black;
 }
 
 .hero-count {
@@ -106,6 +103,15 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+
+.hero {
+    max-width: 704px;
+    margin-bottom: 100px;
+}
+
+.container {
+    max-width: var(--tablet);
+}
 
     .hero-main {
     padding-top: 64px;
@@ -149,7 +155,9 @@ section {
     letter-spacing: -0.04rem;
 }
 
-    .hero-star {
+    .star {
+    width: 50px;
+    height: 50px;
     padding: 15px;
 }
 
@@ -163,87 +171,41 @@ section {
 
     .hero-image {
     margin-top: 40px;
+    width: 393px;
 }
 }
 
 @media screen and (min-width: 1280px) {
 
 .container {
-    padding: 0 50px!important;
+    padding: 0 50px;
+    display: flex;
+    gap: 20px;
+    max-width: var(--desktop);
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    max-width: 1180px;
+    margin: 0 auto;
     gap: 20px;
 }
 
-.hero-content {
-
-}
-
 .hero-main {
-
 }
 
 .hero-main-title {
-
-}
-
-.hero-main-title-span {
-
-}
-
-.hero-main-paragraph {
-
+    font-size: 64px;
+    letter-spacing: -0.16rem;
 }
 
 .hero-second {
-        margin-top: 139px;
+        margin-top: 136px;
         margin-bottom: 50px;
 }
 
-.hero-people {
-
-}
-
-.hero-people-image {
-    
-}
-
-.hero-students {
-
-}
-
-.hero-students-paragraph {
-
-}
-
-.hero-students-arrow {
-
-}
-
-.hero-reviews {
-
-}
-
-.hero-star {
-
-}
-
-.hero-count {
-
-}
-
-.hero-count-paragraph {
-
-}
-
-.hero-count-span {
-
-}
-
 .hero-image {
+    margin-top: 80px;
+    width: 397px;
 }
 
 }
