@@ -81,9 +81,6 @@ letter-spacing: -0.02em;
 .card-text {
     color: var(--white-opas50-color);
     max-width: 279px;
-    font-size: 14px;
-    line-height: 1.28;
-    letter-spacing: -0.02em;
 }
 /* END mobile */
 
@@ -98,8 +95,6 @@ letter-spacing: -0.02em;
 
     .course-text {
         max-width: 381px;
-        font-size: 16px;
-        line-height: 1.25;
     }
 
     .card-list {
@@ -156,10 +151,6 @@ letter-spacing: -0.02em;
         .card-item {
             max-width: 400px;
             width: calc((100% - 40px) / 3);
-        }
-
-        .card-item {
-            margin-bottom: 200px;
         }
 
         .card-text {
