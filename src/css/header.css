@@ -1,0 +1,345 @@
+* {
+  scroll-behavior: smooth;
+}
+/* wrapper for header and hero section */
+.wrapper {
+  background-image: url(/img/header/graphic_bg_mobile.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/* **************************** */
+/* Header and mobile menu styles */
+/* **************************** */
+.head {
+  padding: 20px 0;
+}
+.head-nav {
+  display: flex;
+  gap: 14px;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.head-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-grow: 1;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--white-opas20-color);
+  background-color: var(--primary-black-color);
+}
+.head-logo {
+  fill: var(--primary-white-color);
+}
+.head-logo-icon {
+  width: 127px;
+  height: 20px;
+}
+.is-close {
+  transform: translateX(100%);
+}
+.is-open {
+  transform: translateX(0);
+}
+.head-menu-overlay {
+  /* TODO: change on variable */
+  background-color: rgba(18, 18, 18, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: all 0.25s ease-in-out;
+}
+.head-menu-list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 218px;
+  height: 100vh;
+  padding: 180px 20px 20px;
+  overflow: auto;
+  background: url(/img/header/mob-menu-bg.jpg) var(--accent-color);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  min-height: 812px;
+}
+@media (min-resolution: 192dpi) {
+  .wrapper {
+    background-image: url(/img/header/graphic_bg_mobile@2x.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 375px 947px;
+  }
+  .head-menu-list {
+    background: url(/img/header/mob-menu-bg@2x.jpg) var(--accent-color);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 218px 329px;
+  }
+}
+.head-menu-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.head-btn-menu-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  stroke: var(--primary-white-color);
+  padding: 0;
+  width: 32px;
+  height: 22px;
+}
+.head-btn-menu-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 32px;
+  width: 32px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  stroke: var(--primary-black-color);
+  transition: all 250ms ease-in-out;
+}
+.head-btn-menu-close:hover,
+.head-btn-menu-close:focus,
+.head-btn-menu-close:active {
+  transform: rotate(180deg);
+}
+
+.head-menu-link {
+  color: var(--primary-black-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: normal;
+}
+.head-menu-link:hover,
+.head-menu-link:active,
+.head-menu-link:focus {
+  font-weight: 700;
+}
+.head-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.head-signup-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--secondary-black-color);
+  fill: var(--accent-color-opas40);
+  border-radius: 50%;
+}
+.head-signup-link:hover,
+.head-signup-link:focus,
+.head-signup-link:active {
+  fill: var(--accent-color);
+}
+.head-signup-icon {
+  width: 16px;
+  height: 16px;
+}
+.head-signup-btn {
+  display: none;
+}
+
+/* **************************** */
+/* Styles for tablet */
+/* **************************** */
+@media screen and (min-width: 768px) {
+  .wrapper {
+    background-image: url(/img/header/graphic_bg_tablet.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .head {
+    padding: 20px 0 40px;
+  }
+  .head-container {
+    display: flex;
+    gap: 14px;
+  }
+  .head-nav-inner {
+    padding: 16px 20px;
+  }
+  .head-logo-icon {
+    width: 123px;
+    height: 16px;
+  }
+  .head-menu-list {
+    width: 480px;
+    padding: 232px 64px 64px;
+    background: url(/img/header/mob-menu-bg-768.jpg) var(--accent-color);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    min-height: 1024px;
+  }
+  @media (min-resolution: 192dpi) {
+    .wrapper {
+      background-image: url(/img/header/graphic_bg_tablet@2x.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 768px 1120px;
+    }
+    .head-menu-list {
+      background: url(/img/header/mob-menu-bg-768@2x.jpg) var(--accent-color);
+      background-size: 480px 476px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+    }
+  }
+
+  .head-menu-item:not(:last-child) {
+    margin-bottom: 28px;
+  }
+  .head-btn-menu-open {
+    width: 40px;
+    height: 28px;
+  }
+  .head-signup-link {
+    display: none;
+  }
+  .head-signup-btn {
+    display: inline-flex;
+    background-color: var(--primary-white-color);
+    padding: 16px 58px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    color: var(--primary-black-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.56;
+    border: none;
+    transition: all 250ms ease-in-out;
+  }
+  .head-signup-btn:hover,
+  .head-signup-btn:active,
+  .head-signup-btn:focus {
+    background-color: var(--secondary-black-color);
+    color: var(--accent-color);
+  }
+}
+
+/* **************************** */
+/* styles for desktop to 1280px */
+/* **************************** */
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    background-image: url(/img/header/graphic_bg_desktop.png);
+  }
+  @media (min-resolution: 192dpi) {
+    .wrapper {
+      background-image: url(/img/header/graphic_bg_desktop@2x.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 1280px 909px;
+    }
+  }
+  .head {
+    padding: 20px 0 80px;
+  }
+  .head-container {
+    gap: 20px;
+  }
+  .head-nav {
+    gap: 20px;
+  }
+  .head-nav-inner {
+    padding: 22px 50px;
+  }
+  .is-close {
+    transform: translateX(0);
+  }
+  .head-menu-overlay {
+    background-color: transparent;
+    position: relative;
+    inset: unset;
+    height: unset;
+  }
+  .head-menu-list {
+    position: relative;
+    overflow: hidden;
+    background: none;
+    inset: unset;
+    min-height: unset;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    height: unset;
+    width: unset;
+  }
+  .head-menu-item:not(:last-child) {
+    margin: 0;
+  }
+  .head-btn-menu-open {
+    display: none;
+  }
+  .head-btn-menu-close {
+    display: none;
+  }
+
+  .head-menu-link {
+    color: var(--primary-white-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 250ms ease-in-out;
+  }
+  .head-menu-link:hover,
+  .head-menu-link:active,
+  .head-menu-link:focus {
+    color: var(--accent-color);
+    font-weight: 400;
+  }
+  .head-btn-group {
+    display: none;
+  }
+  .head-btn-menu-open {
+    display: none;
+  }
+  .head-signup-btn {
+    align-items: center;
+    padding: 16px 84px;
+  }
+}
+
+/* **************************** */
+/* styles for desktop to 1440px */
+/* **************************** */
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    background-image: url(/img/header/graphic_bg_1440.png);
+  }
+  @media (min-resolution: 192dpi) {
+    .wrapper {
+      background-image: url(/img/header/graphic_bg_1440@2x.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 1440px 910px;
+    }
+  }
+
+  .head-menu-list {
+    gap: 40px;
+  }
+}
