@@ -24,6 +24,10 @@ gap: 60px;
     letter-spacing: -0.02em;
 }
 
+.sign-up-link {
+    text-decoration-line: underline;
+}
+
 .sign-up-input {
 
     display: flex;
