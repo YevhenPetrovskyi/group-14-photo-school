@@ -16,6 +16,8 @@
           id="name-feedback"
           name="name-feedback"
           placeholder="Enter your name"
+          pattern="[^а-яёА-ЯЁ]\S{10,40}"
+          required
         />
         <input
           class="sign-up-input"
@@ -23,6 +25,8 @@
           id="email-feedback"
           name="email-feedback"
           placeholder="Enter your email"
+          pattern="[^а-яёА-ЯЁ]\S{10,40}"
+          required
         />
         <textarea
           class="sign-up-textarea"
@@ -30,6 +34,8 @@
           name="message-feedback"
           placeholder="Message"
           rows="3"
+          pattern="[^а-яёА-ЯЁ]\S{10,40}"
+          required
         ></textarea>
         <button class="sign-up-button" type="submit">Send</button>
       </form>

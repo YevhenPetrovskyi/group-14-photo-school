@@ -1,0 +1,190 @@
+.foot {
+    padding: 40px 0 20px;
+}
+
+.foot-logo {
+    fill: var(--primary-white-color);
+}
+
+.foot-icon {
+    margin-bottom: 16px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.contact-list,
+.social-network-list,
+.foot-nav-list {
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+.contact-link,
+.social-network-link,
+.foot-nav-link {
+    text-transform: uppercase;
+}
+
+.list {
+    display: inline-flex;
+    gap: 40px;
+}
+
+.social-network,
+.foot-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.foot-nav {
+    margin-bottom: 75px;
+}
+
+.foot-form-email {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.foot-form-input {
+    outline: none;
+    width: 267px;
+    height: 60px;
+    border-radius: 12px;
+    background: var(--primary-white-color);
+    padding: 20px 18px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--primary-black-color);
+    border: none;
+    margin-right: 8px;
+}
+
+.foot-form-input::placeholder {
+    opacity: 0.7;
+}
+
+.foot-btn {
+    font-size: 20px;
+    color: var(--primary-white-color);
+    line-height: 1.2;
+    border-radius: 12px;
+    background: #1D1D1D;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+}
+
+.privacy {
+    display: flex;
+    gap: 72px;
+}
+
+.privacy-link,
+.frame-text {
+    font-size: 12px;
+    line-height: 1.33;
+    font-family: DM SANS;
+    letter-spacing: -0.02em;
+}
+
+.privacy-link {
+    width: 147px;
+    height: 32px;
+    
+}
+
+.frame-text {
+    width: 116px;
+    height: 32px;
+}
+
+/* For tablet */
+
+@media screen and (min-width: 768px) {
+    .foot {
+        padding: 50px 0 25px;
+    }
+    
+    .foot-flex {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .logo-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foot-icon {
+        margin-bottom: 25px;
+    }
+
+    .list {
+        gap: 25px;
+    }
+
+    .foot-nav {
+        margin-bottom: 74px;
+    }
+
+    .foot-form-input {
+        width: 178px;
+        height: 60px;
+    }
+
+    .privacy {
+        justify-content: space-between;
+    }
+
+    .privacy-link,
+    .frame-text {
+    font-size: 14px;
+    line-height: 1.29;
+    }
+
+    .privacy-link {
+        width: 171px;
+        height: 36px;
+        
+    }
+    
+    .frame-text {
+        width: 134px;
+        height: 36px;
+    }
+
+}
+
+/* For desktop */
+@media screen and (min-width: 1280px) {
+    .list {
+        gap: 50px;
+    }
+
+    .social-network,
+    .foot-nav {
+        gap: 20px;
+    }
+
+    .foot-form-input {
+        width: 216px;
+    }
+
+    .foot-form-input {
+        margin-right: 16px;
+    }
+
+    .foot-nav {
+        margin-bottom: 50px;
+    }
+
+}
