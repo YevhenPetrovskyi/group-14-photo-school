@@ -53,7 +53,7 @@ gap: 60px;
     font-family: DM Sans;
     margin: 0;
     margin-bottom: 40px;
-    resize:horizontal
+    resize: none;
 }
 
 
