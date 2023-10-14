@@ -10,12 +10,6 @@
     margin-bottom: 16px;
 }
 
-.address-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .contact {
     display: flex;
     flex-direction: column;
@@ -71,6 +65,10 @@
     margin-right: 8px;
 }
 
+.foot-form-input::placeholder {
+    opacity: 0.7;
+}
+
 .foot-btn {
     font-size: 20px;
     color: var(--primary-white-color);
@@ -98,10 +96,70 @@
 
 .privacy-link {
     width: 147px;
+    height: 32px;
     
 }
 
 .frame-text {
     width: 116px;
+    height: 32px;
+}
+
+/* For tablet */
+
+@media screen and (min-width: 768px) {
+    .foot {
+        padding: 50px 0 25px;
+    }
+    
+    .foot-flex {
+        display: flex;
+        gap: 59px;
+        
+    }
+
+    .logo-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foot-icon {
+        margin-bottom: 25px;
+    }
+
+    .list {
+        gap: 25px;
+    }
+
+    .foot-nav {
+        margin-bottom: 74px;
+    }
+
+    .foot-form-input {
+        width: 178px;
+        height: 60px;
+    }
+
+    .privacy {
+        justify-content: space-between;
+    }
+
+    .privacy-link,
+    .frame-text {
+    font-size: 14px;
+    line-height: 1.29;
+    }
+
+    .privacy-link {
+        width: 171px;
+        height: 36px;
+        
+    }
+    
+    .frame-text {
+        width: 134px;
+        height: 36px;
+    }
+
 }
  
