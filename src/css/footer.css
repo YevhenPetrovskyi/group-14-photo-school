@@ -92,6 +92,7 @@
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.02em;
+    font-family: DM SANS;
 }
 
 .privacy-link {
@@ -114,7 +115,7 @@
     
     .foot-flex {
         display: flex;
-        gap: 59px;
+        justify-content: space-between;
         
     }
 
@@ -159,6 +160,31 @@
     .frame-text {
         width: 134px;
         height: 36px;
+    }
+
+}
+
+/* For desktop */
+@media screen and (min-width: 1280px) {
+    .list {
+        gap: 50px;
+    }
+
+    .social-network,
+    .foot-nav {
+        gap: 20px;
+    }
+
+    .foot-form-input {
+        width: 216px;
+    }
+
+    .foot-form-input {
+        margin-right: 16px;
+    }
+
+    .foot-nav {
+        margin-bottom: 50px;
     }
 
 }
