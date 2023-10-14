@@ -10,8 +10,8 @@
     />
     <title>Focus.Frame</title>
     
-    <script type="module" crossorigin src="/group-14-photo-school/assets/index-0c1fa981.js"></script>
-    <link rel="stylesheet" href="/group-14-photo-school/assets/index-5a0e3575.css">
+    <script type="module" crossorigin src="/group-14-photo-school/assets/index-530f25cb.js"></script>
+    <link rel="stylesheet" href="/group-14-photo-school/assets/index-6fb56902.css">
   </head>
   <body>
     <div class="wrapper">
@@ -299,6 +299,8 @@
           id="name-feedback"
           name="name-feedback"
           placeholder="Enter your name"
+          pattern="[^а-яёА-ЯЁ]\S{10,40}"
+          required
         />
         <input
           class="sign-up-input"
@@ -306,6 +308,8 @@
           id="email-feedback"
           name="email-feedback"
           placeholder="Enter your email"
+          pattern="[^а-яёА-ЯЁ]\S{10,40}"
+          required
         />
         <textarea
           class="sign-up-textarea"
@@ -313,6 +317,8 @@
           name="message-feedback"
           placeholder="Message"
           rows="3"
+          pattern="[^а-яёА-ЯЁ]\S{10,40}"
+          required
         ></textarea>
         <button class="sign-up-button" type="submit">Send</button>
       </form>
@@ -438,8 +444,105 @@
 </section>
 
 
-    
+    <div class="wrapper">
+  <footer class="foot">
+    <div class="container">
+      <div class="foot-flex">
+        <div class="logo-flex">
+          <a class="foot-logo" id="contacts" href="#" title="Focus.Frame">
+            <svg class="foot-icon" width="127" height="20">
+              <use href="/group-14-photo-school/assets/icons-2ba63f2a.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="contact">
+            <li class="contact-list">
+              <a class="contact-link" href="tel:+380665438912">
+                UK: +38 066 543 8912
+              </a>
+            </li>
+            <li class="contact-list">Ukraine, Kyiv</li>
+          </ul>
+        </div>
+        <div class="list">
+          <ul class="social-network">
+            <li class="social-network-list">
+              <a
+                class="social-network-link"
+                href="https://www.instagram.com/goitclub/"
+                target="_blank"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="social-network-list">
+              <a
+                class="social-network-link"
+                href="https://www.facebook.com/goITclub/"
+                target="_blank"
+              >
+                Facebook
+              </a>
+            </li>
+            <li class="social-network-list">
+              <a
+                class="social-network-link"
+                href="https://www.youtube.com/c/GoIT"
+                target="_blank"
+              >
+                Youtube
+              </a>
+            </li>
+          </ul>
+          <ul class="foot-nav">
+            <li class="foot-nav-list">
+              <a class="foot-nav-link" href="#aboutus"> About us </a>
+            </li>
+            <li class="foot-nav-list">
+              <a class="foot-nav-link" href="#ourcourses"> Our courses </a>
+            </li>
+            <li class="foot-nav-list">
+              <a class="foot-nav-link" href="#ourmentors"> Our mentors </a>
+            </li>
+            <li class="foot-nav-list">
+              <a class="foot-nav-link" href="#reviews"> Reviews </a>
+            </li>
+            <li class="foot-nav-list">
+              <a class="foot-nav-link" href="#contacts"> Contacts </a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot-form">
+          <form class="foot-form-email" name="form-email" autocomplete="off">
+            <label class="foot-form-label" for="uemail"> </label>
+            <input
+              class="foot-form-input"
+              type="email"
+              name="user-email"
+              id="uemail"
+              placeholder="Enter your email"
+              pattern="[^а-яёА-ЯЁ]\S{10,40}"
+              required
+            />
+            <button class="foot-btn" type="submit">Go</button>
+          </form>
+        </div>
+      </div>
+      <div class="privacy">
+        <a class="privacy-link" href="#">
+          Privacy Policy <br />
+          Public Offering Agreement
+        </a>
+        <p class="frame-text">
+          2023 Focus Frame <br />
+          © All rights reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+
 
     
   </body>
 </html>
+
