@@ -24,6 +24,10 @@ gap: 60px;
     letter-spacing: -0.02em;
 }
 
+.sign-up-link {
+    text-decoration-line: underline;
+}
+
 .sign-up-input {
 
     display: flex;
@@ -53,7 +57,7 @@ gap: 60px;
     font-family: DM Sans;
     margin: 0;
     margin-bottom: 40px;
-    resize:horizontal
+    resize: none;
 }
 
 
@@ -150,5 +154,16 @@ opacity: 0.7;
 @media screen and (max-width:1279px) {
 .sign-up-photos-container{
     display: none;
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+.sign-up-section{
+    gap: 200px;
+}
+
+    .sign-up-img-2{
+        margin-top: 139px; 
     }
 }

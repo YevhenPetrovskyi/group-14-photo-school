@@ -113,3 +113,9 @@
   line-height: 1.28;
   letter-spacing: -0.02em;
 }
+
+
+@media screen and (max-width: 1440px) {
+.reviews-item-wrap {
+      margin-bottom: 20px;  }
+}
