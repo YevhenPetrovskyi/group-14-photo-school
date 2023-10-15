@@ -1,7 +1,3 @@
-.hero {
-    margin: 0 auto;
-}
-
 .background {
     background-color: var(--secondary-black-color);
     border-radius: 30px;
@@ -201,10 +197,5 @@
 .hero-main{
     padding-top: 80px;
 }
-
-.hero-second{
-    /* margin-top: 0; */
-}
-
 }
 
