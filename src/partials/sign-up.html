@@ -1,0 +1,80 @@
+<section class="section">
+  <div class="sign-up-section container">
+    <!-- sign up form -->
+    <div class="form-container">
+      <h2 class="header-sign-up section-title" id="signup">
+        Sign <span class="accent-text">Up</span>
+      </h2>
+      <p class="section-text p-sign-up">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
+      </p>
+      <form class="sign-up-form">
+        <input
+          class="sign-up-input"
+          type="text"
+          id="name-feedback"
+          name="name-feedback"
+          placeholder="Enter your name"
+          pattern="[^а-яёА-ЯЁ]\S{10,40}"
+          required
+        />
+        <input
+          class="sign-up-input"
+          type="email"
+          id="email-feedback"
+          name="email-feedback"
+          placeholder="Enter your email"
+          pattern="[^а-яёА-ЯЁ]\S{10,40}"
+          required
+        />
+        <textarea
+          class="sign-up-textarea"
+          id="message-feedback"
+          name="message-feedback"
+          placeholder="Message"
+          rows="3"
+        ></textarea>
+        <button class="sign-up-button" type="submit">Send</button>
+      </form>
+      <div class="prvc-div">
+        <p class="section-text sign-up-text">
+          By clicking on "Send" button you agree to our
+          <span
+            ><a class="sign-up-link" href="/index.html">Privacy policy</a></span
+          >
+          and allow Promodo to use this information for marketing purposes.
+        </p>
+      </div>
+    </div>
+    <!-- design elements -->
+    <div class="sign-up-photos-container">
+      <div class="sign-up-element-1">
+        <img
+          class="sign-up-img-1"
+          src="./img/sign-up/isabella_desktop.png"
+          srcset="
+            ./img/sign-up/isabella_desktop.png    1x,
+            ./img/sign-up/isabella_desktop@2x.png 2x
+          "
+          alt="lense"
+          width="150"
+          height="142"
+        />
+      </div>
+      <div class="sign-up-element-2">
+        <div>
+          <img
+            class="sign-up-img-2"
+            src="./img/sign-up/video_desktop.png"
+            srcset="
+              ./img/sign-up/video_desktop.png    1x,
+              ./img/sign-up/video_desktop@2x.png 2x
+            "
+            alt="camera"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

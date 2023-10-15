@@ -1,7 +1,3 @@
-.hero {
-    margin: 0 auto;
-}
-
 .background {
     background-color: var(--secondary-black-color);
     border-radius: 30px;
@@ -21,6 +17,7 @@
     color: var(--accent-color);
     font-style: italic;
     font-weight: 400;
+    margin-right: 6px;
 }
 
 .hero-main-paragraph {
@@ -113,8 +110,7 @@
 
     .hero-main-paragraph {
     width: 418px;
-    height: 54px;
-}
+    }
 
     .hero-people {
     display: flex;
@@ -177,9 +173,12 @@
     letter-spacing: -0.16rem;
 }
 
+.hero-main-title-span {
+    margin-right: 8px;
+}
+
 .hero-second {
-        margin-top: 136px;
-        margin-bottom: 50px;
+    margin-top: 136px;
 }
 
 .hero-image {
@@ -190,11 +189,13 @@
 }
 
 @media screen and (min-width: 1440px) {
-
 .background {
     max-width: 1240px;
     gap: 130px;
 }
 
+.hero-main{
+    padding-top: 80px;
+}
 }
 
