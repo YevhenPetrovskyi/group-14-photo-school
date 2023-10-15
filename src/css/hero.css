@@ -9,7 +9,7 @@
 .hero-main-title {
     font-size: 40px;
     font-weight: 500;
-    line-height: 1.1;
+    line-height: 1.10;
     letter-spacing: -0.1rem;
 }
 
@@ -24,14 +24,14 @@
     margin-top: 20px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.28;
+    line-height: 1.285;
     letter-spacing: -0.0175rem;
 }
 
 .hero-second {
     margin-top: 40px;
     display: flex;
-    gap: 41px;
+    gap: 40px;
 }
 
 .hero-students {
@@ -45,7 +45,7 @@
     width: 67px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.28;
+    line-height: 1.285;
     letter-spacing: -0.035rem;
 }
 
@@ -79,6 +79,10 @@
 
 .hero-count-paragraph {
     color: var(--white-opas50-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.285;
+    letter-spacing: -0.035rem;
 }
 
 .hero-count-span {
@@ -90,7 +94,7 @@
 
 .hero-image {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 31px;
 }
 
 @media screen and (min-width: 768px) {
@@ -104,7 +108,7 @@
     .hero-main-title {
     width: 517px;
     font-size: 60px;
-    letter-spacing: 1.06;
+    letter-spacing: 1.066;
     line-height: -0.15rem;
 }
 
@@ -153,8 +157,8 @@
 }
 
     .hero-image {
-    margin-top: 40px;
     width: 393px;
+    margin-top: 40px;
 }
 }
 
@@ -182,7 +186,7 @@
 }
 
 .hero-image {
-    margin-top: 80px;
+    margin-top: 0px;
     width: 397px;
 }
 
