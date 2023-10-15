@@ -2,17 +2,15 @@
     background-color: var(--secondary-black-color);
     border-radius: 30px;
     max-width: 335px;
-}
-
-.hero-main {
+    padding: 0 20px;
     padding-top: 40px;
 }
 
 .hero-main-title {
     font-size: 40px;
     font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.1rem;
+    line-height: 1.10;
+    letter-spacing: -0.04em;
 }
 
 .hero-main-title-span {
@@ -23,17 +21,17 @@
 }
 
 .hero-main-paragraph {
-    padding-top: 20px;
+    margin-top: 20px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.28;
-    letter-spacing: -0.0175rem;
+    line-height: 1.285;
+    letter-spacing: -0.007em;
 }
 
 .hero-second {
     margin-top: 40px;
     display: flex;
-    gap: 41px;
+    gap: 40px;
 }
 
 .hero-students {
@@ -47,8 +45,8 @@
     width: 67px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.28;
-    letter-spacing: -0.035rem;
+    line-height: 1.285;
+    letter-spacing: -0.014em;
 }
 
 .hero-students-arrow {
@@ -70,7 +68,7 @@
 
 .hero-star {
     fill: transparent;
-    stroke: black;
+    stroke: #121212;
 }
 
 .hero-count {
@@ -81,35 +79,36 @@
 
 .hero-count-paragraph {
     color: var(--white-opas50-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.285;
+    letter-spacing: -0.014em;
 }
 
 .hero-count-span {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.125;
-    letter-spacing: 0.04rem;
+    letter-spacing: -0.0016em;
 }
 
 .hero-image {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 31px;
 }
 
 @media screen and (min-width: 768px) {
 
 .background {
     max-width: 704px;
-}
-
-    .hero-main {
+    padding: 0 32px;
     padding-top: 64px;
 }
 
     .hero-main-title {
     width: 517px;
     font-size: 60px;
-    letter-spacing: 1.06;
-    line-height: -0.15rem;
+    line-height: 1.066;
 }
 
     .hero-main-paragraph {
@@ -139,7 +138,7 @@
     width: 82px;
     font-size: 16px;
     line-height: 1.25;
-    letter-spacing: -0.04rem;
+    letter-spacing: -0.0016em;
 }
 
     .star {
@@ -152,13 +151,17 @@
     gap: 8px;
 }
 
+    .hero-count-paragraph {
+    letter-spacing: -0.0016em;
+}
+
     .hero-count-span {
     line-height: 1.25;
 }
 
     .hero-image {
-    margin-top: 40px;
     width: 393px;
+    margin-top: 40px;
 }
 }
 
@@ -166,6 +169,7 @@
 
 .background {
     padding: 0 50px;
+    padding-top: 80px;
     display: flex;
     gap: 20px;
     max-width: 1080px;
@@ -173,7 +177,6 @@
 
 .hero-main-title {
     font-size: 64px;
-    letter-spacing: -0.16rem;
 }
 
 .hero-main-title-span {
@@ -185,7 +188,7 @@
 }
 
 .hero-image {
-    margin-top: 80px;
+    margin-top: 0px;
     width: 397px;
 }
 
@@ -195,10 +198,6 @@
 .background {
     max-width: 1240px;
     gap: 130px;
-}
-
-.hero-main{
-    padding-top: 80px;
 }
 }
 
