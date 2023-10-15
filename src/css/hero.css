@@ -19,6 +19,7 @@
     color: var(--accent-color);
     font-style: italic;
     font-weight: 400;
+    margin-right: 6px;
 }
 
 .hero-main-paragraph {
@@ -175,6 +176,10 @@
     letter-spacing: -0.16rem;
 }
 
+.hero-main-title-span {
+    margin-right: 8px;
+}
+
 .hero-second {
     margin-top: 136px;
 }
@@ -187,10 +192,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-.hero-main-title {
-        line-height: 1.06;
-    }
-    
 .background {
     max-width: 1240px;
     gap: 130px;
