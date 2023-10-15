@@ -1,28 +1,13 @@
 .foot-border {
     min-width: 320px;
-    max-width: var(--mobile);
     border-top: 1px solid rgba(255, 255, 255, 0.20);
-    padding: 40px 20px 20px 20px;
+    padding: 40px 0 20px;
     margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
     .foot-border {
-        max-width: var(--tablet);
-        padding: 50px 32px 25px 32px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .foot-border {
-        max-width: var(--desktop);
-        padding: 50px 100px 25px 100px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .foot-border {
-        max-width: var(--secondary-desktop);
+        padding: 50px 0 25px;
     }
 }
 
@@ -62,6 +47,7 @@
 .list {
     display: inline-flex;
     gap: 40px;
+    margin-bottom: 75px;
 }
 
 .social-network,
@@ -69,10 +55,6 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
-}
-
-.foot-nav {
-    margin-bottom: 75px;
 }
 
 .foot-form-email {
@@ -155,9 +137,6 @@
 
     .list {
         gap: 25px;
-    }
-
-    .foot-nav {
         margin-bottom: 74px;
     }
 
@@ -193,6 +172,7 @@
 @media screen and (min-width: 1280px) {
     .list {
         gap: 50px;
+        margin-bottom: 50px;
     }
 
     .social-network,
@@ -206,10 +186,6 @@
 
     .foot-form-input {
         margin-right: 16px;
-    }
-
-    .foot-nav {
-        margin-bottom: 50px;
     }
 
 }
