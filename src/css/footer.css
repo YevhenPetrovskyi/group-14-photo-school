@@ -1,5 +1,29 @@
-.foot {
-    padding: 40px 0 20px;
+.foot-border {
+    min-width: 320px;
+    max-width: var(--mobile);
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+    padding: 40px 20px 20px 20px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .foot-border {
+        max-width: var(--tablet);
+        padding: 50px 32px 25px 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .foot-border {
+        max-width: var(--desktop);
+        padding: 50px 100px 25px 100px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .foot-border {
+        max-width: var(--secondary-desktop);
+    }
 }
 
 .foot-logo {
@@ -28,6 +52,11 @@
 .social-network-link,
 .foot-nav-link {
     text-transform: uppercase;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
 }
 
 .list {
@@ -108,11 +137,7 @@
 
 /* For tablet */
 
-@media screen and (min-width: 768px) {
-    .foot {
-        padding: 50px 0 25px;
-    }
-    
+@media screen and (min-width: 768px) {    
     .foot-flex {
         display: flex;
         justify-content: space-between;
