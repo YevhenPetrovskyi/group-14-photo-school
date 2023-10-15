@@ -10,7 +10,7 @@
     font-size: 40px;
     font-weight: 500;
     line-height: 1.10;
-    letter-spacing: -0.1rem;
+    letter-spacing: -0.04em;
 }
 
 .hero-main-title-span {
@@ -25,7 +25,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.285;
-    letter-spacing: -0.0175rem;
+    letter-spacing: -0.007em;
 }
 
 .hero-second {
@@ -46,7 +46,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.285;
-    letter-spacing: -0.035rem;
+    letter-spacing: -0.014em;
 }
 
 .hero-students-arrow {
@@ -68,7 +68,7 @@
 
 .hero-star {
     fill: transparent;
-    stroke: black;
+    stroke: #121212;
 }
 
 .hero-count {
@@ -82,14 +82,14 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.285;
-    letter-spacing: -0.035rem;
+    letter-spacing: -0.014em;
 }
 
 .hero-count-span {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.125;
-    letter-spacing: 0.04rem;
+    letter-spacing: -0.0016em;
 }
 
 .hero-image {
@@ -108,8 +108,8 @@
     .hero-main-title {
     width: 517px;
     font-size: 60px;
-    letter-spacing: 1.066;
-    line-height: -0.15rem;
+    line-height: 1.066;
+    letter-spacing: -0.06em;
 }
 
     .hero-main-paragraph {
@@ -139,7 +139,7 @@
     width: 82px;
     font-size: 16px;
     line-height: 1.25;
-    letter-spacing: -0.04rem;
+    letter-spacing: -0.0016em;
 }
 
     .star {
@@ -150,6 +150,10 @@
 
     .hero-count {
     gap: 8px;
+}
+
+    .hero-count-paragraph {
+    letter-spacing: -0.0016em;
 }
 
     .hero-count-span {
@@ -174,7 +178,7 @@
 
 .hero-main-title {
     font-size: 64px;
-    letter-spacing: -0.16rem;
+    letter-spacing: -0.064em;
 }
 
 .hero-main-title-span {
