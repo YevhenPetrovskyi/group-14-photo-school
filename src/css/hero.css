@@ -187,7 +187,10 @@
 }
 
 @media screen and (min-width: 1440px) {
-
+.hero-main-title {
+        line-height: 1.06;
+    }
+    
 .background {
     max-width: 1240px;
     gap: 130px;
