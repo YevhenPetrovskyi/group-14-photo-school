@@ -54,6 +54,11 @@
     text-transform: uppercase;
 }
 
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
+}
+
 .list {
     display: inline-flex;
     gap: 40px;
