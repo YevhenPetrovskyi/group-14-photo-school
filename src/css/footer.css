@@ -39,6 +39,10 @@
     text-transform: uppercase;
 }
 
+.footer-link {
+    transition: color 300ms ease-in-out;
+}
+
 .footer-link:hover,
 .footer-link:focus {
     color: var(--accent-color);
@@ -91,6 +95,12 @@
     width: 60px;
     height: 60px;
     padding: 0;
+    transition: color 300ms ease-in-out;
+}
+
+.foot-btn:hover,
+.foot-btn:focus {
+    color: var(--accent-color);
 }
 
 .privacy {
