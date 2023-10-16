@@ -130,7 +130,7 @@
   max-width: unset;
   width: 203px;
   height: 202px;
-  margin-top: 70px;
+  margin-top: 76px;
   margin-left: -58px;
 }
 
@@ -156,7 +156,12 @@
   .sign-up-section {
     gap: 200px;
   }
-
+  .sign-up-img-1 {
+    width: 215px;
+    height: 215px;
+    margin-top: 63px;
+    margin-left: -59px;
+  }
   .sign-up-img-2 {
     margin-top: 139px;
   }
