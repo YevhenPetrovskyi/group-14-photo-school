@@ -53,6 +53,7 @@ letter-spacing: -0.02em;
     height: 32px;
     background-color: var(--secondary-black-color);
     border-radius: 50%;
+    transition: background-color 300ms ease-in-out;
 }
 
 .signup-link:hover,
@@ -60,13 +61,14 @@ letter-spacing: -0.02em;
     background-color: var(--accent-color);
 }
 
+.icon-arrow {
+    fill: #777777;
+    transition: fill 300ms ease-in-out;
+}
+
 .signup-link:hover .icon-arrow,
 .signup-link:focus .icon-arrow {
     fill: var(--primary-white-color);
-}
-
-.icon-arrow {
-    fill: #777777;
 }
 
 .card-title {

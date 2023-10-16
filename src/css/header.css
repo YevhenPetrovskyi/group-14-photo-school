@@ -53,7 +53,7 @@
   left: 0;
   right: 0;
   z-index: 1;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .head-menu-list {
   position: absolute;
@@ -96,7 +96,15 @@
   padding: 0;
   width: 32px;
   height: 22px;
+  transition: stroke 300ms ease-in-out;
 }
+
+.head-btn-menu-open:hover,
+.head-btn-menu-open:focus,
+.head-btn-menu-open:active {
+  stroke: var(--accent-color);
+}
+
 .head-btn-menu-close {
   display: flex;
   justify-content: center;
@@ -110,7 +118,7 @@
   border: none;
   padding: 0;
   stroke: var(--primary-black-color);
-  transition: all 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 .head-btn-menu-close:hover,
 .head-btn-menu-close:focus,
@@ -124,6 +132,7 @@
   text-transform: uppercase;
   font-weight: 400;
   line-height: normal;
+  transition: font-weight 300ms ease-in-out;
 }
 .head-menu-link:hover,
 .head-menu-link:active,
@@ -144,6 +153,7 @@
   background-color: var(--secondary-black-color);
   fill: var(--accent-color-opas40);
   border-radius: 50%;
+  transition: fill 300ms ease-in-out;
 }
 .head-signup-link:hover,
 .head-signup-link:focus,
@@ -226,7 +236,7 @@
     font-weight: 700;
     line-height: 1.56;
     border: none;
-    transition: all 250ms ease-in-out;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
   }
   .head-signup-btn:hover,
   .head-signup-btn:active,
@@ -303,13 +313,12 @@
     text-transform: uppercase;
     font-weight: 400;
     line-height: normal;
-    transition: all 250ms ease-in-out;
+    transition: color 300ms ease-in-out;
   }
   .head-menu-link:hover,
   .head-menu-link:active,
   .head-menu-link:focus {
     color: var(--accent-color);
-    font-weight: 400;
   }
   .head-btn-group {
     display: none;

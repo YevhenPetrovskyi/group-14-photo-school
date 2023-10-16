@@ -76,18 +76,18 @@
   text-transform: uppercase;
   border: none;
   border-radius: 12px;
-  background: var(--primary-white-color);
+  background-color: var(--primary-white-color);
   margin: 0;
   margin-bottom: 20px;
   cursor: pointer;
-  border-color: var(--primary-white-color);
+  border: none;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 .sign-up-button:hover,
 .sign-up-button:focus {
   color: var(--accent-color);
   background: var(--secondary-black-color);
-  border-color: var(--secondary-black-color);
 }
 @media screen and (min-width: 768px) {
   .sign-up-input,
